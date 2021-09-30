@@ -26,11 +26,6 @@ a {
 
 a[href^="http://"]:after, a[href^="https://"]:after {
     content: url('/online-cv/assets/svg/test.svg');
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: underline;
     padding-left: 3px;
 }
 
