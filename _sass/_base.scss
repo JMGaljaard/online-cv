@@ -25,7 +25,7 @@ a {
 }
 
 a[href^="http://"]:after, a[href^="https://"]:after {
-    content: url('/assets/svg/test.svg');
+    content: url('/online-cv/assets/svg/test.svg');
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
