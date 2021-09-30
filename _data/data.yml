@@ -41,19 +41,20 @@ career-profile:
   title: About
   summary: |
     Computer Science Masters student at the Delft University of Technology. Enthusiastic about
-    distributed systems from center to edge and Deep Learning (DL) applications.
+    distributed systems from center to edge and Deep Learning (DL) applications. Passionate about
+    learning and helping others to understand.
 
 education:
-  - degree: MSc in Computer Science
+  - degree: MSc. in Computer Science
     university: Delft University of Technology
-    time: 2020 - current
+    time: 2020 - now
     details: |
       Computer Science Master, following the Data Science Track.
 
         - Oriented at Distributed and Machine/Deep Learning Systems.
         - **Master Thesis:** Meta-learning/Multi-task learning, TBD.
 
-  - degree: BSc in Computer Science and Engineering
+  - degree: BSc. in Computer Science and Engineering
     university: Delft University of Technology
     time: 2017 - 2020
     details: |
@@ -65,43 +66,42 @@ education:
         - **Bachelor Thesis:** *"Multi-inference on the Edge: Scheduling Networks with Limited Available Memory"*
 
 experiences:
-  - role: Teaching Assistant Quantitative Performance Evaluation of Computing Systems (MSc.)
-    time: 2021 - current
+  - role: TA Quant. Performance Evaluation of Comp. Sys.
+    time: 2021 - now
     company: Delft University of Technology
     details: |
-      Developed the [Kuberentes FLTK]([Kuberentes FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed.) testbed
+      Teaching assistant at MSc. level course. Developed the [Kuberentes FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed. testbed
       used by MSc. students for their projects. Hosted live tutorial sessions to introduce students to the testbed,
       and assisted students to work on their projects.
 
-        - Developed and maintained the
+        - Developed and maintained the [FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed.
         - Hosted live tutorial sessions to introduce the FLTK testbed on campus.
 
-  - role: Teaching Assistant Introduction to Quantum Computing (BSc.)
-    time: 2020 - current
+  - role: TA Introduction to Quantum Computing
+    time: 2020 - now
     company: Delft University of Technology
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
+      Teaching assistant at BSc. level course. Assisted students with written and programming exercises to strenghten
+      their understanding of core Quantum Computing concepts. Aided responsibl professor to convert and extend exercises
+      into LaTeX and [WebLab](https://weblab.tudelft.nl/about).
 
         - Created and maintained reference solutions for written assignments.
         - Developed and maintained Python programming assignments based on IBM's `qiskit` package.
 
-  - role: Research Assistant Distributed Systems Group
+  - role: Research Assistant at Distributed Systems Group
     time: 2020 - 2021
     company: Delft University of Technology
     details: |
       - Performed research to improve inference of *multiple* Deep Neural Networks on edge
             computing devices.
-      -
+      - Developed and extended [edgecaffe](https://github.com/bacox/edgecaffe) for edge inference.
+      - Developed the [FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed.
 
-  - role: Head Teaching Assistant Big-Data Processing (BSc.)
+  - role: Head TA Big-Data Processing (BSc.)
     time: 2018 - 2020
     company: Delft University of Technology
     details: |
-      Supported responsible teacher and professor with the course organization. Supervised lab
+      Teaching assistant at MSc. level course. Supported responsible teacher and professor with the course organization. Supervised lab
       sessions, and provided support for technical and course-related student questions.
 
         - Developed and tested assignments to hone students Big Data processing skills.
@@ -167,7 +167,7 @@ skills:
       level: 80%
 
     - name: LaTeX, BibTex & TiKZ
-      level: 80%
+      level: 90%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
