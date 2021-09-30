@@ -30,7 +30,7 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     font-weight: normal;
     font-style: normal;
     display: inline-block;
-    text-decoration: none;
+    text-decoration: underline;
     padding-left: 3px;
 }
 
