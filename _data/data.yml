@@ -3,197 +3,171 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
 
-    # Profile information
-    name: Alan Doe
-    tagline: Full Stack Developer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  # Profile information
+  name: Jeroen (Martijn) Galjaard
+  tagline: MSc. student Computer Science
+  avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
-    # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    website: blog.webjeda.com #do not add http://
-    linkedin: alandoe
-    github: sharu725
-    gitlab:
-    bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
+  # Sidebar links
+  email: J.M.Galjaard-1 [at] student.tudelft.nl
+  phone:
+  website: galjaard.work
+  linkedin:
+  github: JMGaljaard
+  gitlab: jmgaljaard
+  bitbucket:
+  twitter:
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
 
-    languages:
-      - idiom: English
-        level: Native
+  languages:
+    - idiom: Dutch
+      level: Native
 
-      - idiom: French
-        level: Professional
+    - idiom: English
+      level: Professional
 
-      - idiom: Spanish
-        level: Professional
-        
-    interests:
-      - item: Climbing
-        link:
+  interests:
+    - item: Photography
+      link:
 
-      - item: Snowboarding
-        link:
-
-      - item: Cooking
-        link:
+    - item: Cooking
+      link:
 
 career-profile:
-    title: Career Profile
-    summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-
-      Second paragraph if required.
+  title: About
+  summary: |
+    Computer Science Masters student at the Delft University of Technology. Enthusiastic about
+    distributed systems from center to edge and Deep Learning (DL) applications.
 
 education:
-    - degree: MSc in Computer Science
-      university: University of London
-      time: 2011 - 2012
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
+  - degree: MSc in Computer Science
+    university: Delft University of Technology
+    time: 2020 - current
+    details: |
+      Computer Science Master, following the Data Science Track.
 
-          - Bullet point
-          - Bullet point 
+        - Oriented at Distributed and Machine/Deep Learning Systems.
+        - **Master Thesis:** Meta-learning/Multi-task learning, TBD.
 
-    - degree: BSc in Applied Mathematics
-      university: Bristol University
-      time: 2007 - 2011
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
+  - degree: BSc in Computer Science and Engineering
+    university: Delft University of Technology
+    time: 2017 - 2020
+    details: |
+      Bachelor education in Computer Science and Engineering, following the Intelligent Data
+      Analysis track.
 
-          - Bullet point
-          - Bullet point 
+        - **Context Project:** Developed a large-scale NCBI/SRA quality metric aggregation platform, using Kubernetes and Helm.
+        - **Minor:** Minor Robotics at Delft University and Technology
+        - **Bachelor Thesis:** *"Multi-inference on the Edge: Scheduling Networks with Limited Available Memory"*
 
 experiences:
-    - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
+  - role: Teaching Assistant Quantitative Performance Evaluation of Computing Systems (MSc.)
+    time: 2021 - current
+    company: Delft University of Technology
+    details: |
+      Developed the [Kuberentes FLTK]([Kuberentes FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed.) testbed
+      used by MSc. students for their projects. Hosted live tutorial sessions to introduce students to the testbed,
+      and assisted students to work on their projects.
 
-          - Bullet point
-          - Bullet point 
+        - Developed and maintained the
+        - Hosted live tutorial sessions to introduce the FLTK testbed on campus.
 
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
+  - role: Teaching Assistant Introduction to Quantum Computing (BSc.)
+    time: 2020 - current
+    company: Delft University of Technology
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
 
-          - Bullet point
-          - Bullet point
+        - Created and maintained reference solutions for written assignments.
+        - Developed and maintained Python programming assignments based on IBM's `qiskit` package.
 
-    - role: UI Developer
-      time: 2012 - 2014
-      company: Amazon, London
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
+  - role: Research Assistant Distributed Systems Group
+    time: 2020 - 2021
+    company: Delft University of Technology
+    details: |
+      - Performed research to improve inference of *multiple* Deep Neural Networks on edge
+            computing devices.
+      -
 
-          - Bullet point
-          - Bullet point
+  - role: Head Teaching Assistant Big-Data Processing (BSc.)
+    time: 2018 - 2020
+    company: Delft University of Technology
+    details: |
+      Supported responsible teacher and professor with the course organization. Supervised lab
+      sessions, and provided support for technical and course-related student questions.
+
+        - Developed and tested assignments to hone students Big Data processing skills.
+        - Assisted students to implement BD exercises and understand core BD concepts.
+
+  - role: Student Mentor
+    time: 2018 - 2019
+    company: Delft University of Technology
+    details: |
+      Helped getting CSE freshmen students getting started at the Delft University of Technology.
+      Organized weekly meetings to discuss study-related topics, and assisted students help them get familiar with the Delft University of Technology as a student.
+
+  - role: Member Students Panels Computer Science (CRI)
+    time: 2017 - 2020
+    company: Christiaan Huygens (Study Association CSE)
+    details: |
+      Provided feedback on courses and lecturers/professors during my Bachelor education to help improve the quality of
+      the courses in the curriculum.
 
 projects:
-    title: Projects
-    intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  title: Projects
+  intro:
 
-    assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+  assignments:
+    - title: (Kubernetes) Federated Learning ToolKit (FLTK)
+      link: "https://github.com/JMGaljaard/fltk-testbed"
+      tagline: "A Kubernetes cluster and Helm based toolkit for Deep Learning training and inference."
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
-
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+    - title: Project BeachBot (BB)
+      link: "https://www.projectbb.org/"
+      tagline: "Developed ROS software stack for a litter collection robot prototype."
 
 publications:
-    title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+  title: Publications
+  intro:
 
-    papers:
-      - title: The Art of Computer Programming
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+  papers:
+    - title: "MemA: Fast Inference of Multiple Deep Models"
+      authors:  J. Galjaard, B. Cox, A. Ghiassi, L. Y. Chen, R. Birke
+      conference: "2021 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)"
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+    - title: "Masa: Responsive Multi-DNN Inference on the Edge"
+      authors: B. Cox, J. Galjaard, A. Ghiassi, R. Birke and L. Y. Chen
+      conference: "2021 IEEE International Conference on Pervasive Computing and Communications (PerCom)"
 
 skills:
-    title: Skills &amp; Proficiency
+  title: Skills
 
-    toolset:
-      - name: Python & Django
-        level: 98%
+  toolset:
+    - name: Python
+      level: 98%
 
-      - name: Javascript & jQuery
-        level: 98%
+    - name: Docker & Docker Compose
+      level: 98%
 
-      - name: Angular
-        level: 98%
+    - name: Java
+      level: 87%
 
-      - name: HTML5 & CSS
-        level: 95%
+    - name: Scala, Akka, Spark & Flink
+      level: 85%
 
-      - name: Ruby on Rails
-        level: 85%
+    - name: Kubernetes & Helm
+      level: 80%
 
-      - name: Sketch & Photoshop
-        level: 60%
+    - name: LaTeX, BibTex & TiKZ
+      level: 80%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
