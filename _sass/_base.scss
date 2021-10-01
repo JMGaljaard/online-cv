@@ -3,7 +3,7 @@
 /* ======= Base ======= */
 body {
     font-family: 'Roboto', sans-serif;
-    @include color-assign(color, background);
+    @include color-assign(color, text-color-secondary);
     @include color-assign(background, background);
     font-size: 14px;
     padding: 30px;
