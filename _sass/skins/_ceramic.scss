@@ -30,12 +30,6 @@ $colors: (
   @return '--color-#{$color-key}';
 }
 
-:root {
-  @each $key, $value in map-get($colors, 'light') {
-    #{compose-color-variable($key)}: #{$value};
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     @each $key, $value in map-get($colors, 'dark') {
