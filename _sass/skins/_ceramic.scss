@@ -79,6 +79,6 @@ $colors: (
   $fallback: #{color-get("light", $color-key)};
   $var: var(#{compose-color-variable($color-key)});
 
-  #{$property}: darken(if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)}), $amount);
-  #{$property}: darken(if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)}), $amount);
+  #{$property}: darken(var(if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)})), $amount);
+  #{$property}: darken(var(if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)})), $amount);
 }
