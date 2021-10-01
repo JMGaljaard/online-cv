@@ -11,6 +11,7 @@ $heart: #fb866a;
 
 $colors: (
         light: (
+                background: #fff,
                 theme-color: #4B6A78,
                 text-color: #3F4650,
                 text-color-secondary: #545E6C,
@@ -22,6 +23,7 @@ $colors: (
                 heart: #fb866a,
         ),
         dark: (
+                background: #000,
                 theme-color: #4B6A78,
                 text-color: #3F4650,
                 text-color-secondary: #545E6C,
@@ -72,4 +74,20 @@ $colors: (
 
   #{$property}: if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)});
   #{$property}: if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)});
+}
+
+@mixin color-assign-lighten($property, $color-key, $amount, $template: '') {
+  $fallback: #{color-get("light", $color-key)};
+  $var: var(#{compose-color-variable($color-key)});
+
+  #{$property}: lighten(if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)}), $amount);
+  #{$property}: lighten(if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)}), $amount);
+}
+
+@mixin color-assign-darken($property, $color-key, $amount, $template: '') {
+  $fallback: #{color-get("light", $color-key)};
+  $var: var(#{compose-color-variable($color-key)});
+
+  #{$property}: darken(if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)}), $amount);
+  #{$property}: darken(if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)}), $amount);
 }
