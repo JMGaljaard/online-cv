@@ -19,6 +19,7 @@ a {
     color: darken($theme-color, 15%);
     &:hover {
         text-decoration: underline;
+        // TODO: add darken option
         color: darken($theme-color, 30%);
     }
     &:focus {
@@ -36,7 +37,7 @@ p {
 }
 
 .wrapper {
-    background:$theme-color;
+    @include color-assign(background, theme-color);
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
@@ -44,7 +45,7 @@ p {
 }
 
 .sidebar-wrapper {
-    background: $theme-color;
+    @include color-assign(background, theme-color);
     position: absolute;
     right: 0;
     width: 280px;
@@ -57,6 +58,7 @@ p {
     .profile-container {
         padding: 30px;
         //background: darken($theme-color, 10%);
+        // TODO: fix darkened theme color
         background: rgba(0, 0, 0, 0.2);
         text-align: center;
         color: #fff;
@@ -188,7 +190,7 @@ p {
         margin-bottom: 2px;
     }
     .job-title, .degree {
-        color: $text-color;
+        @include color-assign(color, text-color);
         font-size: 16px;
         margin-top: 0;
         margin-bottom: 0;
@@ -198,11 +200,11 @@ p {
         position: absolute;
         right: 0;
         top: 0;
-        color: $text-grey;
+        @include color-assign(color, text-grey);
     }
     .company, .university {
         margin-bottom: 10px;
-        color: $text-grey;
+        @include color-assign(color, text-grey);
     }
 
     .project-title {
@@ -223,12 +225,12 @@ p {
     .publication-title {
         font-size: 16px;
         font-weight: 400;
-        color: $text-color;
+        @include color-assign(color, text-color);
         margin-bottom: 1px;
     }
     .publication-authors {
         font-style: italic;
-        color: $text-grey;
+        @include color-assign(color, text-grey);
         margin-bottom: 1px;
     }
     .publications-section {
@@ -254,10 +256,11 @@ p {
     }
     .level-bar {
         height: 12px;
-        background: $smoky-white;
+        @include color-assign(background, smokey-white);
     }
     .level-bar-inner {
         height: 12px;
+        // TODO: Add lighten
         background: lighten($theme-color, 15%);
     }
 }
@@ -269,12 +272,12 @@ p {
     padding-top: 30px;
     .copyright {
         line-height: 1.6;
-        color: $text-color-secondary;
+        @include color-assign(color, text-color-secondary);
         font-size: 13px;
     }
 
     .fa-heart {
-        color: $heart;
+        @include color-assign(color, heart);
     }
 
 }
