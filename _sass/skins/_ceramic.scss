@@ -26,18 +26,6 @@ $colors: (
         ),
 );
 
-@function compose-color-variable($color-key) {
-  @return '--color-#{$color-key}';
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    @each $key, $value in map-get($colors, 'dark') {
-      #{compose-color-variable($key)}: #{$value};
-    }
-  }
-}
-
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
 
