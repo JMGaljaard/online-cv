@@ -16,10 +16,10 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 a {
-    @include color-assign-darken(color, theme-color, 15%);
+    @include color-assign(color, theme-color-darken);
     &:hover {
         text-decoration: underline;
-        @include color-assign-darken(color, theme-color, 30%);
+        @include color-assign(color, theme-color-darker);
     }
     &:focus {
         text-decoration: none;
@@ -170,7 +170,7 @@ p {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 500;
-        @include color-assign-lighten(color, theme-color, 15%);
+        @include color-assign(color, theme-color-lighten);
         position: relative;
         margin-top: 0;
         margin-bottom: 20px;
@@ -260,7 +260,7 @@ p {
     }
     .level-bar-inner {
         height: 12px;
-        @include color-assign-lighten(background, theme-color, 15%);
+        @include color-assign(background, lighter-grey);
     }
 }
 

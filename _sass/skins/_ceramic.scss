@@ -3,6 +3,9 @@ $colors: (
         light: (
                 background: #fff,
                 theme-color: #4B6A78,
+                theme-color-lighten: #5d8395,
+                theme-color-darken: #3f5a65,
+                theme-color-darker: #344a53,
                 text-color: #3F4650,
                 text-color-secondary: #545E6C,
                 text-grey: #97AAC3,
@@ -15,6 +18,9 @@ $colors: (
         dark: (
                 background: #000,
                 theme-color: #4B6A78,
+                theme-color-lighten: #5d8395,
+                theme-color-darken: #3f5a65,
+                theme-color-darker: #344a53,
                 text-color: #3F4650,
                 text-color-secondary: #545E6C,
                 text-grey: #97AAC3,
@@ -78,8 +84,8 @@ $color-placeholder: 'here';
 
 @mixin color-assign-darken($property, $color-key, $amount, $template: '') {
   $fallback: #{color-get("light", $color-key)};
-  $var: var(#{compose-color-variable($color-key)});
+  $var: #{compose-color-variable($color-key)};
 
   #{$property}: if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)});
-  #{$property}: if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)});
+  #{$property}: if(str-length($template) == 0, lighten($var, $amount), lighten(#{str-replace($template, $color-placeholder, $var)}, $amount));
 };
