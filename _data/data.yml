@@ -61,7 +61,7 @@ education:
       Bachelor education in Computer Science and Engineering, following the Intelligent Data
       Analysis track.
 
-        - **Context Project:** Developed a large-scale NCBI/SRA quality metric aggregation platform, using Kubernetes and Helm.
+        - **Context Project:** Developed `yaqc`, a large-scale NCBI/SRA quality metric aggregation platform, using Kubernetes and Helm.
         - **Minor:** Minor Robotics at Delft University and Technology
         - **Bachelor Thesis:** *"Multi-inference on the Edge: Scheduling Networks with Limited Available Memory"*
 
