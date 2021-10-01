@@ -1,4 +1,4 @@
-@import "skins/_ceramic.scss"
+@import "skins/_ceramic.scss";
 
 /* ======= Base ======= */
 body {
@@ -263,9 +263,6 @@ p {
         @include color-assign-lighten(background, theme-color, 15%);
     }
 }
-
-
-
 
 .footer {
     padding-top: 30px;
