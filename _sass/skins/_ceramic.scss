@@ -54,6 +54,7 @@ $colors: (
     }
   }
 }
+$color-placeholder: 'here';
 
 @function color-get($palette, $color-key) {
   @return map-get(map-get($colors, $palette), $color-key);
@@ -71,14 +72,14 @@ $colors: (
   $fallback: #{color-get("light", $color-key)};
   $var: var(#{compose-color-variable($color-key)});
 
-  #{$property}: lighten(if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)}), $amount);
-  #{$property}: lighten(if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)}), $amount);
+  #{$property}: if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)});
+  #{$property}: if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)});
 }
 
 @mixin color-assign-darken($property, $color-key, $amount, $template: '') {
   $fallback: #{color-get("light", $color-key)};
   $var: var(#{compose-color-variable($color-key)});
 
-  #{$property}: darken(if(str-length($template) == 0, $fallback, var(#{str-replace($template, $color-placeholder, $fallback)})), $amount);
-  #{$property}: darken(if(str-length($template) == 0, $var, var(#{str-replace($template, $color-placeholder, $var)})), $amount);
-}
+  #{$property}: if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)});
+  #{$property}: if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)});
+};
