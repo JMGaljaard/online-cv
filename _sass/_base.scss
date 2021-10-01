@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 a {
-    @include color-assign(color, theme-color, 15%);
+    @include color-assign-darken(color, theme-color, 15%);
     &:hover {
         text-decoration: underline;
         @include color-assign-darken(color, theme-color, 30%);
