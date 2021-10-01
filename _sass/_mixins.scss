@@ -1,3 +1,5 @@
+@import "skins/ceramic";
+
 @mixin text-shadow($string: 0 1px 3px rgba(0, 0, 0, 0.25)){
 	text-shadow: $string;
 }
@@ -185,7 +187,7 @@ $highdpi: #{"(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio
   }
 }
 
-@import "online-cv/skins/ceramic";
+
 
 @mixin color-assign($property, $color-key, $template: '') {
 	$fallback: #{color-get("light", $color-key)};
