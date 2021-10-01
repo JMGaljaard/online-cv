@@ -26,13 +26,6 @@ $colors: (
         ),
 );
 
-
-@function compose-color-variable($color-key) {
-  @return '--color-#{$color-key}';
-}
-
-
-
 @function compose-color-variable($color-key) {
   @return '--color-#{$color-key}';
 }
