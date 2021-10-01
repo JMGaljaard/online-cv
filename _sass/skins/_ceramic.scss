@@ -8,3 +8,68 @@ $lighter-grey: #ccc;
 $darker-grey: #666;
 $smoky-white: #f5f5f5;
 $heart: #fb866a;
+
+$colors: (
+        light: (
+                theme-color: #4B6A78,
+                text-color: #3F4650,
+                text-color-secondary: #545E6C,
+                text-grey: #97AAC3,
+                divider: #e8e8e8,
+                lighter-grey: #ccc,
+                darker-grey: #666,
+                smoky-white: #f5f5f5,
+                heart: #fb866a,
+        ),
+        dark: (
+                theme-color: #4B6A78,
+                text-color: #3F4650,
+                text-color-secondary: #545E6C,
+                text-grey: #97AAC3,
+                divider: #e8e8e8,
+                lighter-grey: #ccc,
+                darker-grey: #666,
+                smoky-white: #f5f5f5,
+                heart: #fb866a,
+        ),
+);
+
+@function compose-color-variable($color-key) {
+  @return '--color-#{$color-key}';
+}
+
+:root {
+  @each $key, $value in map-get($colors, 'light') {
+    #{compose-color-variable($key)}: #{$value};
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @each $key, $value in map-get($colors, 'dark') {
+      #{compose-color-variable($key)}: #{$value};
+    }
+  }
+}
+
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+
+  @if not $index {
+    @return $string;
+  }
+
+  @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+}
+
+@function color-get($palette, $color-key) {
+  @return map-get(map-get($colors, $palette), $color-key);
+}
+
+@mixin color-assign($property, $color-key, $template: '') {
+  $fallback: #{color-get("light", $color-key)};
+  $var: var(#{compose-color-variable($color-key)});
+
+  #{$property}: if(str-length($template) == 0, $fallback, #{str-replace($template, $color-placeholder, $fallback)});
+  #{$property}: if(str-length($template) == 0, $var, #{str-replace($template, $color-placeholder, $var)});
+}
