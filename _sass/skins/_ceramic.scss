@@ -26,6 +26,21 @@ $colors: (
         ),
 );
 
+
+$color-placeholder: 'here';
+
+
+@function compose-color-variable($color-key) {
+  @return '--color-#{$color-key}';
+}
+
+:root {
+  @each $key, $value in map-get($colors, 'light') {
+    #{compose-color-variable($key)}: #{$value};
+  }
+}
+
+
 @function compose-color-variable($color-key) {
   @return '--color-#{$color-key}';
 }
