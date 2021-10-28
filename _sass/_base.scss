@@ -36,6 +36,7 @@ p {
 }
 
 .wrapper {
+    // Must be 'lighter' than body background
     @include color-assign(background, background);
     max-width: 1000px;
     margin: 0 auto;
