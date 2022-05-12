@@ -52,7 +52,7 @@ education:
       Computer Science Master, following the Data Science Track.
 
         - Oriented at Distributed and Machine/Deep Learning Systems.
-        - **Master Thesis:** Meta-learning/Multi-task learning, TBD.
+        - **Master Thesis:** Robust meta-learning.
 
   - degree: BSc. in Computer Science and Engineering
     university: Delft University of Technology
@@ -66,12 +66,19 @@ education:
         - **Bachelor Thesis:** *"Multi-inference on the Edge: Scheduling Networks with Limited Available Memory"*
 
 experiences:
-  - role: TA Quant. Performance Evaluation of Comp. Sys.
-    time: 2021 - now
+  - role: TA Seminar Distributed Machine Learning
+    time: 2021 - 2022
     company: Delft University of Technology
     details: |
-      Teaching assistant at MSc. level course. Developed the [Kuberentes FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed. testbed
-      used by MSc. students for their projects. Hosted live tutorial sessions to introduce students to the testbed,
+      Teaching assistant at MSc. level course. Developed and maintained the [Kuberentes FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed. 
+      Hosted a live tutorial session to introduce students to the testbed, and assisted students to work on their projects and resolved issues with the code base.
+
+  - role: TA Quant. Performance Evaluation of Comp. Sys.
+    time: 2021 - 2022
+    company: Delft University of Technology
+    details: |
+      Teaching assistant at MSc. level course. Developed the [Kuberentes FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed. The testbed
+      was used by MSc. students for their projects. Hosted live tutorial sessions to introduce students to the testbed,
       and assisted students to work on their projects.
 
         - Developed and maintained the [FLTK](https://github.com/JMGaljaard/fltk-testbed) testbed.
